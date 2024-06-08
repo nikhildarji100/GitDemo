@@ -18,6 +18,7 @@ import nikhilautomation.pageobjects.ProductCatalogue;
 public class ErrorValidation extends BaseTests{
 	@Test
 	public void Login_Error_Validation() throws IOException, InterruptedException{
+//		checking
 		String expectedErrorMessage = "Incorrect email or password.";
 		landingPage.loginApplication("nikhil2101@gmail.com", "Nikhil@123");
 		Assert.assertEquals(landingPage.getErrorMessage(), expectedErrorMessage, "Required error message is not displayed.");
